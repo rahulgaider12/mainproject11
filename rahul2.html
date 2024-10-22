@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script slider</script></title>
+    <style>
+        .slider-container{
+            width: 800px;
+            border: 1px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider{
+            display:flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide{
+            flex: 0 0 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            
+
+        }
+        .slide.active{
+            transform: translateX(0);
+        }
+        .slide-controls{
+
+            display: flex;
+        }
+        .slide-controls{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translatex(-50%);
+            
+        }
+        .prev-slide,
+        .next-slide{
+            margin: 0 10px;
+            
+        }
+        .slide.active{
+            transform: translateX(0);
+        }
+        .slide-controls  button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active" style="background: url(istockphoto-854450808-2048x2048.jpg);"></div>
+            <div class="slide" style="background: url(istockphoto-1415800703-2048x2048.jpg);"></div>
+            <div class="slide" style="background: url(istockphoto-1737181230-2048x2048.jpg);"></div>
+            
+        </div>
+        <div class="slide-controls">
+        <div class="prev-slide"><button>prev</button></div>
+        <div class="next-slide"><button>next</button></div>
+        </div>
+    </div>
+    <script>
+        let slider = document.querySelector(".slider");
+        let = document.querySelectorAll(".slide");
+        let prevBtn = document.querySelector(".prev-slide");
+        let nextBtn = document.querySelector(".next-slide");
+        let slideIndex = 0;
+        slides[slideIndex].classList.add('active');
+        prevBtn.addEventListener('click',prevBtn);
+        nextBtn.addEventListener('click',nextBtn);
+        function prevslides(){
+
+        }
+        function nextSlides(){
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+            slides[slideIndex].classList.add('active');
+            slider.style.transform = 'translatex(-${slideIndex * 100}%)' ;
+                                }
+</script>
+</body>
+</html>
