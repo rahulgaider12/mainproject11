@@ -1,129 +1,155 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-.header{
-    min-height: 100vh;
+body{
+    margin: 0%;
+    padding: 0%;
+    background: gray;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(IMG_20230919_081343.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
- }
-  .header h1{
-        
-        color: red;
-        font-size: 40px;
-        padding: 5px;
-        margin-left: 15px;
-}
-a{
-    text-decoration: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
+    height: 100%;
+    
+    
     
 }
-ul {
+.image{
+    border: solid black;
+}
+
+.image ul{
+    display: flex;
+}
+.image ul li{
     list-style: none;
     
 }
-ul li a{
-    color: white
+.image{
+    
+    display: flex;
+    background-color: paleturquoise;
 }
-.nav-links {
-    flex:1;
-    text-align: right;
-}
-.nav-links ul li{
-    display: inline-block;
-    padding: 8px 12px;
-    font-weight: 900;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-right: 25px;
+.image ul li img{
+    height: 300px;
+    width: 200px;
+    margin: 2px;
+    border-radius: 5%;
+    padding: 0;
     position: relative;
+    display: flex;
+    border: solid black;
+    margin-top: 0%;
+    
 }
-.nav-links ul li::after{
-    content: ''; 
-    width: 0%;
-    height: 2px;
-    background: red;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-.text-box  {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
-}
-.text-box h1{
-    font-size: 62px;
-    color:white;
 
+
+.imag ul{
+    display: flex;
 }
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 40px;
+.imag ul li{
+    list-style: none;
+    
 }
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 12px 34px;
-    font-size: 20px;
-    background: transparent;
+.imag{
+    
+    display: flex;
+    background-color: pink;
+}
+.imag ul li img{
+    height: 300px;
+    width: 200px;
+    margin: 2px;
+    border-radius: 5%;
+    padding: 0;
     position: relative;
+    display: flex;
+    border: solid black;
+    margin-top: 0%;
+    
+}
+.image li:hover{
+    background-color: black;
+    cursor: pointer;
+    
+}
+.imag li:hover{
+    background-color: black;
     cursor: pointer;
 }
-.hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: 1s;
+.imgae div img{
+    filter: grayscale(100%);
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+.card{
+        background-color: tomato;
+        border: 3px solid black;
+        display: flex;
+}
+.box{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    background-color: red;
+    width: 16%;
+    height: 400px;
+    margin-left: 28px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+}
+ table{
+    border: 1px solid black;
+    margin-left: 10px;
+    
+}
+.title1 h1 {
+        text-align: center;
+        color: white;
+        font-weight: 100px;
+        border: 1px solid black;
+}
+.title1{
+    border: 1px solid black;
+}
+ .btn a {
+    text-decoration: none;
+    justify-content: center;
+    font-size: large;
+    font-weight: 800px;
     color: black;
 }
-nav .fa{
-    display: none;
+.btn button {
+    display: block;
+    margin: 5px;
+    margin-top: 18px;
+    margin-left: 75px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
-@media(max-width:700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
+.btn button:hover{
+    background-color: aqua;
+}
+.sub{
+    width: 100%;
+    height: 600px;
+    background-color: darkolivegreen;
+}
+.box1{
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+    margin-top: 20px;
+    border: 3px solid black;
+    
+}
+.box1 h1{
+    margin-top: 5px;
+    font-weight: 500px;
+    
+}
 
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor:pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-}
+
+
